@@ -10,6 +10,8 @@ function deliver_response($status, $hoy){
 
 header('Content-Type:application/json');
 
+date_default_timezone_set('Europe/Madrid');
+
 $hoy = date("d/m/Y"); 
 
 deliver_response(200, $hoy);
